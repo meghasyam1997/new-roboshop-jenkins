@@ -1,7 +1,7 @@
 - name: Copy the template
   ansible.builtin.template:
     src : single-job.xml
-    dest: /temp/test.xml
+    dest: /tmp/test.xml
 
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:
